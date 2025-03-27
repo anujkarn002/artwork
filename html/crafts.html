@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pochampally Ikat - Craft Documentation - Artwork</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Custom Styles -->
+    <style>
+      .craft-image:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md">
+      <div class="container mx-auto px-4 py-3">
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <div class="flex items-center">
+            <img
+              src="https://via.placeholder.com/50"
+              alt="Artwork Logo"
+              class="h-10 w-10 rounded-full"
+            />
+            <h1 class="ml-2 text-2xl font-bold text-indigo-800">Artwork</h1>
+          </div>
+
+          <!-- Search Bar -->
+          <div class="hidden md:flex items-center w-1/3 relative">
+            <input
+              type="text"
+              placeholder="Search for crafts, regions, artisans..."
+              class="w-full py-2 px-4 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            />
+            <button class="absolute right-3 text-gray-500">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+
+          <!-- Navigation -->
+          <nav class="hidden md:flex space-x-6 text-gray-600">
+            <a href="#" class="hover:text-indigo-800">Home</a>
+            <a href="#" class="hover:text-indigo-800 font-medium">Explore</a>
+            <a href="#" class="hover:text-indigo-800">Stories</a>
+            <a href="#" class="hover:text-indigo-800">Artisans</a>
+            <a href="#" class="hover:text-indigo-800">About</a>
+          </nav>
+
+          <!-- Mobile Menu Button -->
+          <button class="md:hidden text-gray-600">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Craft Header with Basic Information -->
+    <section class="art-form-header bg-indigo-900 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <!-- Craft Image -->
+          <div class="w-full md:w-2/5">
+            <img
+              src="https://via.placeholder.com/600x400"
+              alt="Pochampally Ikat Textile"
+              class="rounded-lg shadow-xl w-full"
+            />
+          </div>
+
+          <!-- Craft Information -->
+          <div class="w-full md:w-3/5">
+            <div class="flex flex-wrap gap-3 mb-4">
+              <span
+                class="badge bg-indigo-700 text-white text-xs px-3 py-1 rounded-full"
+                >Textile</span
+              >
+              <span
+                class="badge bg-indigo-700 text-white text-xs px-3 py-1 rounded-full"
+                >Telangana, India</span
+              >
+              <span
+                class="badge bg-green-600 text-white text-xs px-3 py-1 rounded-full"
+                >GI Tagged (2005)</span
+              >
+            </div>
+
+            <h1 class="text-3xl md:text-4xl font-bold mb-3">
+              Pochampally Ikat
+            </h1>
+            <p class="text-lg mb-6">
+              A unique tie-dye technique from Telangana that creates geometric
+              patterns with intricate precision
+            </p>
+
+            <div
+              class="grid grid-cols-2 md:grid-cols-4 gap-4 border-t border-indigo-800 pt-6"
+            >
+              <div>
+                <p class="text-xl font-bold">350+</p>
+                <p class="text-sm text-gray-300">Active Artisans</p>
+              </div>
+              <div>
+                <p class="text-xl font-bold">5th Century</p>
+                <p class="text-sm text-gray-300">Historical Origins</p>
+              </div>
+              <div>
+                <p class="text-xl font-bold">2005</p>
+                <p class="text-sm text-gray-300">GI Registration</p>
+              </div>
+              <div>
+                <p class="text-xl font-bold">Pochampally</p>
+                <p class="text-sm text-gray-300">Primary Location</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contemporary Adaptations Section -->
+      <div class="bg-gray-100 rounded-lg shadow-md p-8 mb-12">
+        <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">
+          Contemporary Adaptations
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Modern Innovations -->
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold mb-4 text-gray-800">
+              Modern Innovations
+            </h3>
+            <div class="mb-4">
+              <img
+                src="https://via.placeholder.com/600x400"
+                alt="Modern Ikat Products"
+                class="w-full rounded-lg"
+              />
+            </div>
+            <p class="text-gray-600 mb-4">
+              While respecting traditional techniques, contemporary artisans are
+              innovating with:
+            </p>
+            <ul class="space-y-2 text-gray-600">
+              <li class="flex items-start">
+                <span class="text-indigo-600 mr-2">•</span>
+                <span>New color palettes inspired by global trends</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-indigo-600 mr-2">•</span>
+                <span
+                  >Application to modern products like home decor and fashion
+                  accessories</span
+                >
+              </li>
+              <li class="flex items-start">
+                <span class="text-indigo-600 mr-2">•</span>
+                <span
+                  >Fusion with other craft techniques for unique hybrid
+                  products</span
+                >
+              </li>
+              <li class="flex items-start">
+                <span class="text-indigo-600 mr-2">•</span>
+                <span
+                  >Sustainable practices using organic dyes and materials</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Market Trends -->
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold mb-4 text-gray-800">
+              Market Trends & Future
+            </h3>
+            <div class="mb-4">
+              <img
+                src="https://via.placeholder.com/600x400"
+                alt="Market Display of Ikat"
+                class="w-full rounded-lg"
+              />
+            </div>
+            <p class="text-gray-600 mb-4">
+              Pochampally Ikat is finding new markets and relevance through:
+            </p>
+            <ul class="space-y-2 text-gray-600">
+              <li class="flex items-start">
+                <span class="text-indigo-600 mr-2">•</span>
+                <span
+                  >Collaborations with fashion designers bringing Ikat to
+                  international runways</span
+                >
+              </li>
+              <li class="flex items-start">
+                <span class="text-indigo-600 mr-2">•</span>
+                <span
+                  >Growing demand for sustainable, handcrafted products among
+                  conscious consumers</span
+                >
+              </li>
+              <li class="flex items-start">
+                <span class="text-indigo-600 mr-2">•</span>
+                <span
+                  >Digital marketplaces connecting artisans directly with global
+                  customers</span
+                >
+              </li>
+              <li class="flex items-start">
+                <span class="text-indigo-600 mr-2">•</span>
+                <span
+                  >Integration into luxury hospitality and interior design
+                  projects</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Elements -->
+      <div class="bg-white rounded-lg shadow-md p-8 mb-12">
+        <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">
+          Explore More
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Interactive Map -->
+          <div class="bg-gray-50 rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold mb-4 text-gray-800">
+              Geographical Distribution
+            </h3>
+            <div
+              id="craft-map"
+              class="h-64 bg-gray-200 flex items-center justify-center mb-4"
+            >
+              <!-- Interactive map would be rendered here via JavaScript -->
+              <p class="text-gray-400">Interactive Map of Ikat Clusters</p>
+            </div>
+            <p class="text-gray-600 text-sm">
+              Explore regions where Pochampally Ikat is practiced. The craft has
+              spread from its original center to surrounding villages, each with
+              slight variations in technique and design.
+            </p>
+          </div>
+
+          <!-- Video Demo -->
+          <div class="bg-gray-50 rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold mb-4 text-gray-800">
+              Process Demonstration
+            </h3>
+            <div
+              class="video-player h-64 bg-gray-800 flex items-center justify-center mb-4"
+            >
+              <!-- Video player would be embedded here -->
+              <i class="fas fa-play-circle text-6xl text-white opacity-70"></i>
+            </div>
+            <p class="text-gray-600 text-sm">
+              Watch master artisans demonstrate the intricate process of
+              creating Pochampally Ikat, from yarn preparation to the final
+              weaving.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to Action -->
+      <div class="bg-indigo-900 text-white rounded-lg shadow-md p-8 mb-12">
+        <div class="text-center">
+          <h2 class="text-3xl font-bold mb-4">Support This Craft</h2>
+          <p class="max-w-2xl mx-auto mb-8">
+            By purchasing authentic Pochampally Ikat, you help preserve this
+            cultural heritage and support the artisan communities who keep this
+            tradition alive.
+          </p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a
+              href="#"
+              class="bg-white text-indigo-900 py-3 px-8 rounded-full font-medium hover:bg-gray-100 transition"
+            >
+              Shop Pochampally Products
+            </a>
+            <a
+              href="#"
+              class="border border-white py-3 px-8 rounded-full font-medium hover:bg-white hover:text-indigo-900 transition"
+            >
+              Meet the Artisans
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Tabs -->
+    <section class="container mx-auto px-4 py-8">
+      <!-- Tabs -->
+      <div class="border-b border-gray-200 mb-8">
+        <ul class="flex flex-wrap -mb-px text-sm font-medium text-center">
+          <li class="mr-2">
+            <a
+              href="#"
+              class="inline-block p-4 border-b-2 border-indigo-600 rounded-t-lg text-indigo-600 active"
+              >Overview</a
+            >
+          </li>
+          <li class="mr-2">
+            <a
+              href="#"
+              class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+              >History</a
+            >
+          </li>
+          <li class="mr-2">
+            <a
+              href="#"
+              class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+              >Techniques</a
+            >
+          </li>
+          <li class="mr-2">
+            <a
+              href="#"
+              class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+              >Artisans</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+              >Products</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Main Content with Visual Gallery -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+        <!-- Gallery and Description -->
+        <div class="lg:col-span-2">
+          <!-- Visual Gallery -->
+          <div class="visual-gallery mb-8">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+              <div class="craft-image col-span-2 row-span-2">
+                <img
+                  src="https://via.placeholder.com/600x400"
+                  alt="Pochampally Ikat Saree"
+                  class="w-full h-full object-cover rounded-lg shadow-md transition duration-300"
+                />
+              </div>
+              <div class="craft-image">
+                <img
+                  src="https://via.placeholder.com/300x300"
+                  alt="Ikat Pattern Detail"
+                  class="w-full h-full object-cover rounded-lg shadow-md transition duration-300"
+                />
+              </div>
+              <div class="craft-image">
+                <img
+                  src="https://via.placeholder.com/300x300"
+                  alt="Weaving Process"
+                  class="w-full h-full object-cover rounded-lg shadow-md transition duration-300"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Overview Content -->
+          <div class="prose max-w-none">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800">
+              Pochampally Ikat: An Overview
+            </h2>
+
+            <p class="mb-4">
+              Pochampally Ikat is a beautiful textile art with a unique style of
+              tie-dye weaving where the warp and weft threads are tie-dyed
+              before weaving, creating geometric patterns that appear to blur at
+              the edges. This distinctive art form originates from Pochampally
+              village in Telangana, India.
+            </p>
+
+            <p class="mb-4">
+              What makes Pochampally Ikat special is the intricate process of
+              creating designs by resist-dyeing sections of bundled yarn before
+              they are woven. The technique requires immense skill, as the
+              weaver must perfectly align the dyed yarns to create the intended
+              pattern. This results in the characteristic feathered or blurred
+              appearance that is the hallmark of Ikat textiles.
+            </p>
+
+            <p class="mb-4">
+              The craft gained international recognition and protection through
+              a Geographical Indication (GI) tag in 2005, which ensures that
+              only textiles produced in the Pochampally region using traditional
+              methods can be labeled as authentic Pochampally Ikat.
+            </p>
+
+            <h3 class="text-xl font-bold mt-6 mb-3 text-gray-800">
+              Key Characteristics
+            </h3>
+
+            <ul class="list-disc pl-6 mb-6">
+              <li>Geometric patterns with a characteristic blurred effect</li>
+              <li>
+                Vibrant contrasting colors, traditionally made with natural dyes
+              </li>
+              <li>
+                Double Ikat technique (both warp and weft threads are dyed)
+              </li>
+              <li>Cotton, silk, or a blend of both materials</li>
+              <li>
+                Traditional motifs including temple borders, elephants, and
+                flowers
+              </li>
+            </ul>
+
+            <p class="mb-4">
+              Today, Pochampally Ikat faces both opportunities and challenges.
+              While there is growing global appreciation for this traditional
+              craft, the community struggles with competition from machine-made
+              imitations, changing consumer preferences, and the complexity of
+              training new artisans in this highly skilled technique.
+            </p>
+          </div>
+        </div>
+
+        <!-- Sidebar Information -->
+        <div class="lg:col-span-1">
+          <!-- Location Map -->
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h3 class="font-bold text-gray-800 mb-4">Geographical Origin</h3>
+            <div class="aspect-w-16 aspect-h-9 bg-gray-200 rounded mb-4">
+              <!-- This would be an actual map in production -->
+              <div
+                class="w-full h-48 bg-gray-200 flex items-center justify-center text-gray-400"
+              >
+                <span>Map of Pochampally, Telangana</span>
+              </div>
+            </div>
+            <p class="text-gray-600 text-sm mb-1">
+              Primary Location: Pochampally Village
+            </p>
+            <p class="text-gray-600 text-sm mb-1">
+              District: Yadadri Bhuvanagiri
+            </p>
+            <p class="text-gray-600 text-sm">State: Telangana, India</p>
+          </div>
+
+          <!-- Historical Timeline -->
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h3 class="font-bold text-gray-800 mb-4">Historical Timeline</h3>
+            <div class="relative pl-8 border-l-2 border-indigo-200">
+              <!-- Timeline Item -->
+              <div class="mb-6 relative">
+                <div
+                  class="absolute -left-10 mt-1.5 w-5 h-5 rounded-full bg-indigo-600"
+                ></div>
+                <h4 class="text-sm font-bold text-gray-800">5th-6th Century</h4>
+                <p class="text-xs text-gray-600">
+                  Origins of Ikat techniques in India, influenced by trade with
+                  Southeast Asia
+                </p>
+              </div>
+
+              <!-- Timeline Item -->
+              <div class="mb-6 relative">
+                <div
+                  class="absolute -left-10 mt-1.5 w-5 h-5 rounded-full bg-indigo-600"
+                ></div>
+                <h4 class="text-sm font-bold text-gray-800">
+                  11th-12th Century
+                </h4>
+                <p class="text-xs text-gray-600">
+                  Flourishing under the patronage of Kakatiya Dynasty
+                </p>
+              </div>
+
+              <!-- Timeline Item -->
+              <div class="mb-6 relative">
+                <div
+                  class="absolute -left-10 mt-1.5 w-5 h-5 rounded-full bg-indigo-600"
+                ></div>
+                <h4 class="text-sm font-bold text-gray-800">
+                  17th-19th Century
+                </h4>
+                <p class="text-xs text-gray-600">
+                  Development of distinct Pochampally style and patterns
+                </p>
+              </div>
+
+              <!-- Timeline Item -->
+              <div class="mb-6 relative">
+                <div
+                  class="absolute -left-10 mt-1.5 w-5 h-5 rounded-full bg-indigo-600"
+                ></div>
+                <h4 class="text-sm font-bold text-gray-800">1950s</h4>
+                <p class="text-xs text-gray-600">
+                  Revival efforts by the Indian government post-independence
+                </p>
+              </div>
+
+              <!-- Timeline Item -->
+              <div class="relative">
+                <div
+                  class="absolute -left-10 mt-1.5 w-5 h-5 rounded-full bg-indigo-600"
+                ></div>
+                <h4 class="text-sm font-bold text-gray-800">2005</h4>
+                <p class="text-xs text-gray-600">
+                  Awarded Geographical Indication (GI) Tag
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Symbolism in Motifs -->
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="font-bold text-gray-800 mb-4">
+              Common Motifs & Symbolism
+            </h3>
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <div class="bg-indigo-100 p-2 rounded-lg mr-3">
+                  <i class="fas fa-th text-indigo-600"></i>
+                </div>
+                <div>
+                  <p class="text-sm font-medium text-gray-800">
+                    Chowka (Squares)
+                  </p>
+                  <p class="text-xs text-gray-600">
+                    Symbolizes stability and the four directions
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="bg-indigo-100 p-2 rounded-lg mr-3">
+                  <i class="fas fa-gopuram text-indigo-600"></i>
+                </div>
+                <div>
+                  <p class="text-sm font-medium text-gray-800">
+                    Temple Borders
+                  </p>
+                  <p class="text-xs text-gray-600">
+                    Represents spirituality and divine protection
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="bg-indigo-100 p-2 rounded-lg mr-3">
+                  <i class="fas fa-seedling text-indigo-600"></i>
+                </div>
+                <div>
+                  <p class="text-sm font-medium text-gray-800">
+                    Floral Patterns
+                  </p>
+                  <p class="text-xs text-gray-600">
+                    Symbolizes growth, beauty, and prosperity
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="bg-indigo-100 p-2 rounded-lg mr-3">
+                  <i class="fas fa-chess-board text-indigo-600"></i>
+                </div>
+                <div>
+                  <p class="text-sm font-medium text-gray-800">
+                    Chitiki (Checks)
+                  </p>
+                  <p class="text-xs text-gray-600">
+                    Represents balance and harmony
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technical Process Section -->
+      <div class="bg-white rounded-lg shadow-md p-8 mb-12">
+        <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">
+          The Craft Process
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-12">
+          <!-- Step 1 -->
+          <div class="technique-step">
+            <div class="aspect-w-16 aspect-h-9 mb-4">
+              <img
+                src="https://via.placeholder.com/400x300"
+                alt="Design Preparation"
+                class="rounded-lg shadow-md w-full h-48 object-cover"
+              />
+            </div>
+            <h3 class="text-lg font-bold mb-2 text-gray-800">
+              1. Design Creation
+            </h3>
+            <p class="text-gray-600 text-sm">
+              The master weaver first creates the pattern on graph paper,
+              calculating precisely how threads must be arranged and tied. This
+              design document serves as the blueprint for the entire process.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="technique-step">
+            <div class="aspect-w-16 aspect-h-9 mb-4">
+              <img
+                src="https://via.placeholder.com/400x300"
+                alt="Thread Preparation"
+                class="rounded-lg shadow-md w-full h-48 object-cover"
+              />
+            </div>
+            <h3 class="text-lg font-bold mb-2 text-gray-800">
+              2. Thread Preparation
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Cotton or silk threads are measured, counted, and arranged
+              according to the design. The quality of the thread directly
+              impacts the final product's durability and appearance.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="technique-step">
+            <div class="aspect-w-16 aspect-h-9 mb-4">
+              <img
+                src="https://via.placeholder.com/400x300"
+                alt="Binding Process"
+                class="rounded-lg shadow-md w-full h-48 object-cover"
+              />
+            </div>
+            <h3 class="text-lg font-bold mb-2 text-gray-800">
+              3. Binding Process
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Sections of the yarn bundles are tightly bound with
+              water-resistant material (traditionally bark, now often plastic)
+              to resist dye penetration. These bindings determine where the dye
+              will not reach.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="technique-step">
+            <div class="aspect-w-16 aspect-h-9 mb-4">
+              <img
+                src="https://via.placeholder.com/400x300"
+                alt="Dyeing Process"
+                class="rounded-lg shadow-md w-full h-48 object-cover"
+              />
+            </div>
+            <h3 class="text-lg font-bold mb-2 text-gray-800">
+              4. Dyeing Process
+            </h3>
+            <p class="text-gray-600 text-sm">
+              The bound yarn is immersed in dye baths of different colors.
+              Traditionally, natural dyes from plants and minerals were used.
+              After dyeing, the yarn is dried in the shade to prevent color
+              fading.
+            </p>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="technique-step">
+            <div class="aspect-w-16 aspect-h-9 mb-4">
+              <img
+                src="https://via.placeholder.com/400x300"
+                alt="Loom Setup"
+                class="rounded-lg shadow-md w-full h-48 object-cover"
+              />
+            </div>
+            <h3 class="text-lg font-bold mb-2 text-gray-800">5. Loom Setup</h3>
+            <p class="text-gray-600 text-sm">
+              The dyed yarns are carefully arranged on the loom according to the
+              design. For double Ikat, both warp (vertical) and weft
+              (horizontal) threads are dyed to create more complex patterns.
+            </p>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="technique-step">
+            <div class="aspect-w-16 aspect-h-9 mb-4">
+              <img
+                src="https://via.placeholder.com/400x300"
+                alt="Weaving Process"
+                class="rounded-lg shadow-md w-full h-48 object-cover"
+              />
+            </div>
+            <h3 class="text-lg font-bold mb-2 text-gray-800">6. Weaving</h3>
+            <p class="text-gray-600 text-sm">
+              The actual weaving begins on traditional pit looms. As the weaver
+              interlaces the warp and weft threads, the dyed patterns align to
+              reveal the intended design. This requires extraordinary precision
+              and skill.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Materials Used Section -->
+      <div class="bg-gray-50 rounded-lg shadow-md p-8 mb-12">
+        <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">
+          Materials & Tools
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Materials -->
+          <div>
+            <h3 class="text-lg font-bold mb-4 text-gray-800">
+              Traditional Materials
+            </h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <div class="bg-amber-100 p-2 rounded-lg mr-3">
+                  <i class="fas fa-spool text-amber-600"></i>
+                </div>
+                <div>
+                  <p class="text-sm font-medium text-gray-800">Cotton Yarn</p>
+                  <p class="text-xs text-gray-600">
+                    High-quality, long-staple cotton is traditionally used for
+                    everyday wear items
+                  </p>
+                </div>
+              </li>
+
+              <li class="flex items-start">
+                <div class="bg-amber-100 p-2 rounded-lg mr-3">
+                  <i class="fas fa-spool text-amber-600"></i>
+                </div>
+                <div>
+                  <p class="text-sm font-medium text-gray-800">Silk Yarn</p>
+                  <p class="text-xs text-gray-600">
+                    Used for premium garments and special occasion wear
+                  </p>
+                </div>
+              </li>
+
+              <li class="flex items-start">
+                <div class="bg-amber-100 p-2 rounded-lg mr-3">
+                  <i class="fas fa-fill-drip text-amber-600"></i>
+                </div>
+                <div>
+                  <p class="text-sm font-medium text-gray-800">Natural Dyes</p>
+                  <p class="text-xs text-gray-600">
+                    Derived from plants, minerals, and sometimes insects; common
+                    sources include indigo, turmeric, and iron oxide
+                  </p>
+                </div>
+              </li>
+
+              <li class="flex items-start">
+                <div class="bg-amber-100 p-2 rounded-lg mr-3">
+                  <i class="fas fa-leaf text-amber-600"></i>
+                </div>
+                <div>
+                  <p class="text-sm font-medium text-gray-800">
+                    Binding Materials
+                  </p>
+                  <p class="text-xs text-gray-600">
+                    Traditionally tree bark or leaves; now often replaced with
+                    water-resistant synthetic materials
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tools -->
+          <div>
+            <h3 class="text-lg font-bold mb-4 text-gray-800">
+              Traditional Tools
+            </h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <div class="bg-indigo-100 p-2 rounded-lg mr-3">
+                  <i class="fas fa-ruler-combined text-indigo-600"></i>
+                </div>
+                <div>
+                  <p class="text-sm font-medium text-gray-800">Pit Loom</p>
+                  <p class="text-xs text-gray-600">
+                    Traditional floor loom where the weaver sits with their feet
+                    in a pit to operate pedals
+                  </p>
+                </div>
+              </li>
+
+              <li class="flex items-start">
+                <div class="bg-indigo-100 p-2 rounded-lg mr-3">
+                  <i class="fas fa-drafting-compass text-indigo-600"></i>
+                </div>
+                <div>
+                  <p class="text-sm font-medium text-gray-800">
+                    Marking Frames
+                  </p>
+                  <p class="text-xs text-gray-600">
+                    Wooden frames used to mark the yarn for binding according to
+                    the pattern
+                  </p>
+                </div>
+              </li>
+
+              <li class="flex items-start">
+                <div class="bg-indigo-100 p-2 rounded-lg mr-3">
+                  <i class="fas fa-wind text-indigo-600"></i>
+                </div>
+                <div>
+                  <p class="text-sm font-medium text-gray-800">
+                    Charkha (Spinning Wheel)
+                  </p>
+                  <p class="text-xs text-gray-600">
+                    Used for winding the yarn onto bobbins and spools
+                  </p>
+                </div>
+              </li>
+
+              <li class="flex items-start">
+                <div class="bg-indigo-100 p-2 rounded-lg mr-3">
+                  <i class="fas fa-pencil-ruler text-indigo-600"></i>
+                </div>
+                <div>
+                  <p class="text-sm font-medium text-gray-800">Graph Paper</p>
+                  <p class="text-xs text-gray-600">
+                    Used for planning and documenting the intricate designs
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Artisan Community Section -->
+      <div class="bg-white rounded-lg shadow-md p-8 mb-12">
+        <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">
+          Artisan Community
+        </h2>
+
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
+          <!-- Community Info -->
+          <div class="lg:col-span-3 prose max-w-none">
+            <p class="mb-4">
+              The Pochampally Ikat craft is primarily practiced by the Padmasali
+              community, traditional weavers who have passed down this art
+              through generations. Today, approximately 350 active artisan
+              families in Pochampally and surrounding villages continue this
+              tradition.
+            </p>
+
+            <p class="mb-4">
+              Traditionally, Ikat weaving is a family enterprise where different
+              members handle various stages of the process. Men typically manage
+              the more physically demanding tasks like dyeing and loom setup,
+              while women often excel in the intricate thread counting and
+              binding processes. Children learn by observing and gradually
+              participating in simpler tasks.
+            </p>
+
+            <p class="mb-4">The craft faces several challenges today:</p>
+
+            <ul class="list-disc pl-6 mb-4">
+              <li>
+                Decreasing interest among younger generations who prefer more
+                lucrative careers
+              </li>
+              <li>
+                Competition from power looms producing inexpensive imitations
+              </li>
+              <li>Fluctuating market demand and pricing pressures</li>
+              <li>Limited access to sustainable markets and fair prices</li>
+            </ul>
+
+            <p class="mb-4">
+              However, various initiatives are helping to preserve the craft:
+            </p>
+
+            <ul class="list-disc pl-6 mb-4">
+              <li>
+                Formation of weaver cooperatives providing collective bargaining
+                power
+              </li>
+              <li>
+                Government schemes offering subsidies and training programs
+              </li>
+              <li>
+                Design collaborations with fashion designers bringing
+                contemporary relevance
+              </li>
+              <li>
+                Digital platforms (like this one) connecting artisans directly
+                to global markets
+              </li>
+            </ul>
+          </div>
+
+          <!-- Stats & Figures -->
+          <div class="lg:col-span-2">
+            <div class="bg-indigo-50 rounded-lg p-6 mb-6">
+              <h3 class="font-bold text-gray-800 mb-4">Community Statistics</h3>
+              <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                  <p class="text-sm text-gray-600">Active Artisans:</p>
+                  <p class="font-bold text-gray-800">~350 families</p>
+                </div>
+                <div class="flex items-center justify-between">
+                  <p class="text-sm text-gray-600">Primary Communities:</p>
+                  <p class="font-bold text-gray-800">Padmasali, Devanga</p>
+                </div>
+                <div class="flex items-center justify-between">
+                  <p class="text-sm text-gray-600">Villages Involved:</p>
+                  <p class="font-bold text-gray-800">12</p>
+                </div>
+                <div class="flex items-center justify-between">
+                  <p class="text-sm text-gray-600">Avg. Family Income:</p>
+                  <p class="font-bold text-gray-800">₹15,000-25,000/month</p>
+                </div>
+                <div class="flex items-center justify-between">
+                  <p class="text-sm text-gray-600">Training Programs:</p>
+                  <p class="font-bold text-gray-800">8 active initiatives</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Featured Artisan -->
+            <div
+              class="bg-white border border-gray-200 rounded-lg overflow-hidden"
+            >
+              <div class="flex items-center p-4">
+                <img
+                  src="https://via.placeholder.com/100"
+                  alt="Master Artisan"
+                  class="w-16 h-16 rounded-full object-cover mr-4"
+                />
+                <div>
+                  <h4 class="font-bold text-gray-800">Lakshmi Devi</h4>
+                  <p class="text-xs text-gray-600">
+                    Master Weaver with 42 years experience
+                  </p>
+                  <a
+                    href="#"
+                    class="text-xs text-indigo-600 hover:text-indigo-800"
+                    >View Profile →</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artisan Profile - Artwork</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Custom Styles -->
+    <style>
+      .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md">
+      <div class="container mx-auto px-4 py-3">
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <div class="flex items-center">
+            <img
+              src="https://via.placeholder.com/50"
+              alt="Artwork Logo"
+              class="h-10 w-10 rounded-full"
+            />
+            <h1 class="ml-2 text-2xl font-bold text-indigo-800">Artwork</h1>
+          </div>
+
+          <!-- Search Bar -->
+          <div class="hidden md:flex items-center w-1/3 relative">
+            <input
+              type="text"
+              placeholder="Search for crafts, regions, artisans..."
+              class="w-full py-2 px-4 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            />
+            <button class="absolute right-3 text-gray-500">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+
+          <!-- Navigation -->
+          <nav class="hidden md:flex space-x-6 text-gray-600">
+            <a href="#" class="hover:text-indigo-800">Home</a>
+            <a href="#" class="hover:text-indigo-800">Explore</a>
+            <a href="#" class="hover:text-indigo-800">Stories</a>
+            <a href="#" class="hover:text-indigo-800 font-medium">Artisans</a>
+            <a href="#" class="hover:text-indigo-800">About</a>
+          </nav>
+
+          <!-- Mobile Menu Button -->
+          <button class="md:hidden text-gray-600">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Artisan Profile Header -->
+    <section class="bg-indigo-900 text-white">
+      <div class="container mx-auto px-4 py-8 md:py-12">
+        <div class="flex flex-col md:flex-row items-center">
+          <!-- Artisan Image -->
+          <div class="mb-6 md:mb-0 md:mr-8">
+            <img
+              src="https://via.placeholder.com/300"
+              alt="Lakshmi Devi"
+              class="w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-white shadow-xl object-cover"
+            />
+          </div>
+
+          <!-- Artisan Info -->
+          <div class="text-center md:text-left">
+            <h1 class="text-3xl md:text-4xl font-bold mb-2">Lakshmi Devi</h1>
+            <p class="text-xl mb-3">Master Weaver, Pochampally Ikat</p>
+            <div
+              class="flex flex-wrap justify-center md:justify-start gap-3 mb-4"
+            >
+              <span
+                class="bg-indigo-800 text-white text-sm px-3 py-1 rounded-full"
+                >40+ Years Experience</span
+              >
+              <span
+                class="bg-indigo-800 text-white text-sm px-3 py-1 rounded-full"
+                >GI Tagged Craft</span
+              >
+              <span
+                class="bg-indigo-800 text-white text-sm px-3 py-1 rounded-full"
+                >Award Winner</span
+              >
+            </div>
+            <p class="text-gray-200 max-w-2xl">
+              I have been weaving Pochampally Ikat for over 40 years, learning
+              the craft from my mother and grandmother. Our family has been
+              preserving this tradition for generations.
+            </p>
+          </div>
+        </div>
+
+        <!-- Stats Bar -->
+        <div
+          class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 pt-8 border-t border-indigo-800"
+        >
+          <div class="text-center">
+            <p class="text-3xl font-bold">120+</p>
+            <p class="text-sm text-gray-300">Products Created</p>
+          </div>
+          <div class="text-center">
+            <p class="text-3xl font-bold">50+</p>
+            <p class="text-sm text-gray-300">Artisans Trained</p>
+          </div>
+          <div class="text-center">
+            <p class="text-3xl font-bold">3</p>
+            <p class="text-sm text-gray-300">National Awards</p>
+          </div>
+          <div class="text-center">
+            <p class="text-3xl font-bold">42</p>
+            <p class="text-sm text-gray-300">Years of Experience</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Area with Tabs -->
+    <section class="container mx-auto px-4 py-8">
+      <!-- Tabs -->
+      <div class="border-b border-gray-200 mb-6">
+        <ul class="flex flex-wrap -mb-px text-sm font-medium text-center">
+          <li class="mr-2">
+            <a
+              href="#"
+              class="inline-block p-4 border-b-2 border-indigo-600 rounded-t-lg text-indigo-600 active"
+              >Story</a
+            >
+          </li>
+          <li class="mr-2">
+            <a
+              href="#"
+              class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+              >Products</a
+            >
+          </li>
+          <li class="mr-2">
+            <a
+              href="#"
+              class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+              >Craft Details</a
+            >
+          </li>
+          <li class="mr-2">
+            <a
+              href="#"
+              class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+              >Workshop</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Artisan Story Content (Active Tab) -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Main Content -->
+        <div class="lg:col-span-2">
+          <h2 class="text-2xl font-bold mb-6 text-gray-800">
+            My Journey as an Artisan
+          </h2>
+
+          <!-- Video Section -->
+          <div class="mb-8 rounded-lg overflow-hidden shadow-lg bg-black">
+            <!-- This would be a real video in production -->
+            <div
+              class="aspect-w-16 aspect-h-9 bg-gray-700 flex items-center justify-center"
+            >
+              <i class="fas fa-play-circle text-6xl text-white opacity-70"></i>
+              <span class="sr-only">Play Video</span>
+            </div>
+            <div class="bg-gray-900 text-white p-4">
+              <h3 class="font-medium">The Art of Pochampally Ikat Weaving</h3>
+              <p class="text-sm text-gray-400">
+                Watch Lakshmi Devi demonstrate the traditional tie-dye technique
+              </p>
+            </div>
+          </div>
+
+          <!-- Story Text -->
+          <div class="prose max-w-none">
+            <p class="mb-4">
+              I was born in Pochampally village, known for its unique geometric
+              patterns in Ikat weaving. At the age of 12, I began learning this
+              craft from my mother, who herself was a master weaver. Our family
+              has been involved in this tradition for over five generations.
+            </p>
+
+            <p class="mb-4">
+              The most challenging aspect was learning to tie the yarn in
+              precise patterns before dyeing - a process that requires immense
+              patience and precision. Each mistake means starting over, and in
+              my early days, I would often spend days redoing the same section.
+            </p>
+
+            <h3 class="text-xl font-bold mt-6 mb-3">Preserving Heritage</h3>
+            <p class="mb-4">
+              In the 1980s, I saw many young people from our village abandoning
+              weaving for factory jobs in cities. That's when I decided to not
+              only practice but teach and preserve our heritage. With support
+              from the local handicraft board, I started training young women in
+              our community.
+            </p>
+
+            <p class="mb-4">
+              Over the years, I've trained more than 50 artisans, many of whom
+              now run their own weaving enterprises. Seeing them succeed gives
+              me immense satisfaction. In 1994, I received my first National
+              Award for a complex double Ikat saree that took six months to
+              complete.
+            </p>
+
+            <h3 class="text-xl font-bold mt-6 mb-3">
+              Innovations in Tradition
+            </h3>
+            <p class="mb-4">
+              While I respect traditional patterns, I've also experimented with
+              contemporary designs and color combinations to appeal to younger
+              customers. I believe tradition survives when it adapts.
+            </p>
+
+            <p class="mb-4">
+              Today, my work has reached international exhibitions, and I take
+              pride in sharing our cultural heritage with the world. Each piece
+              I create carries centuries of knowledge and the identity of our
+              community.
+            </p>
+
+            <blockquote class="italic border-l-4 border-indigo-500 pl-4 my-6">
+              "The threads we weave connect us to our ancestors and to future
+              generations. Each knot, each color tells our story."
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- Sidebar Content -->
+        <div class="lg:col-span-1">
+          <!-- Location Card -->
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h3 class="font-bold text-gray-800 mb-4">Location</h3>
+            <div class="aspect-w-16 aspect-h-9 bg-gray-200 rounded mb-4">
+              <!-- This would be an actual map in production -->
+              <div
+                class="w-full h-40 bg-gray-200 flex items-center justify-center text-gray-400"
+              >
+                <span>Map of Pochampally, Telangana</span>
+              </div>
+            </div>
+            <p class="text-gray-600 text-sm mb-2">Pochampally Village</p>
+            <p class="text-gray-600 text-sm">Telangana, India</p>
+          </div>
+
+          <!-- Craft Details Card -->
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h3 class="font-bold text-gray-800 mb-4">Craft Details</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <div class="bg-indigo-100 p-1 rounded-full mr-3">
+                  <i class="fas fa-paint-brush text-indigo-600 text-xs"></i>
+                </div>
+                <div>
+                  <p class="text-sm font-medium text-gray-800">Craft Type</p>
+                  <p class="text-xs text-gray-600">
+                    Pochampally Ikat (Textile)
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <div class="bg-indigo-100 p-1 rounded-full mr-3">
+                  <i class="fas fa-certificate text-indigo-600 text-xs"></i>
+                </div>
+                <div>
+                  <p class="text-sm font-medium text-gray-800">GI Status</p>
+                  <p class="text-xs text-gray-600">Registered in 2005</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <div class="bg-indigo-100 p-1 rounded-full mr-3">
+                  <i class="fas fa-history text-indigo-600 text-xs"></i>
+                </div>
+                <div>
+                  <p class="text-sm font-medium text-gray-800">
+                    Historical Origin
+                  </p>
+                  <p class="text-xs text-gray-600">
+                    Dates back to 19th century
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <div class="bg-indigo-100 p-1 rounded-full mr-3">
+                  <i class="fas fa-users text-indigo-600 text-xs"></i>
+                </div>
+                <div>
+                  <p class="text-sm font-medium text-gray-800">Community</p>
+                  <p class="text-xs text-gray-600">
+                    Traditional weaver families
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Awards & Recognition -->
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="font-bold text-gray-800 mb-4">Awards & Recognition</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <div class="bg-amber-100 p-1 rounded-full mr-3">
+                  <i class="fas fa-award text-amber-600 text-xs"></i>
+                </div>
+                <div>
+                  <p class="text-sm font-medium text-gray-800">
+                    National Award
+                  </p>
+                  <p class="text-xs text-gray-600">
+                    Ministry of Textiles, 1994
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <div class="bg-amber-100 p-1 rounded-full mr-3">
+                  <i class="fas fa-award text-amber-600 text-xs"></i>
+                </div>
+                <div>
+                  <p class="text-sm font-medium text-gray-800">State Award</p>
+                  <p class="text-xs text-gray-600">
+                    Telangana Handicrafts, 2010
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <div class="bg-amber-100 p-1 rounded-full mr-3">
+                  <i class="fas fa-award text-amber-600 text-xs"></i>
+                </div>
+                <div>
+                  <p class="text-sm font-medium text-gray-800">
+                    Shilp Guru Award
+                  </p>
+                  <p class="text-xs text-gray-600">President of India, 2018</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="bg-gray-100 py-10">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold mb-8 text-gray-800">Featured Products</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Product 1 -->
+          <div
+            class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300"
+          >
+            <img
+              src="https://via.placeholder.com/300x400"
+              alt="Pochampally Ikat Saree"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-gray-800 mb-2">
+                Traditional Pochampally Saree
+              </h3>
+              <p class="text-gray-600 text-sm mb-3">
+                Handwoven cotton saree with geometric patterns in natural dyes
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-indigo-700">₹12,500</span>
+                <button
+                  class="bg-indigo-600 text-white py-1 px-4 rounded-full text-sm hover:bg-indigo-700"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div
+            class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300"
+          >
+            <img
+              src="https://via.placeholder.com/300x400"
+              alt="Ikat Dupatta"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-gray-800 mb-2">
+                Silk Ikat Dupatta
+              </h3>
+              <p class="text-gray-600 text-sm mb-3">
+                Pure silk dupatta with traditional motifs in vibrant colors
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-indigo-700">₹4,800</span>
+                <button
+                  class="bg-indigo-600 text-white py-1 px-4 rounded-full text-sm hover:bg-indigo-700"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div
+            class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300"
+          >
+            <img
+              src="https://via.placeholder.com/300x400"
+              alt="Ikat Fabric"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-gray-800 mb-2">Ikat Yardage</h3>
+              <p class="text-gray-600 text-sm mb-3">
+                Cotton Ikat fabric by the yard for home decor and apparel
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-indigo-700">₹850/m</span>
+                <button
+                  class="bg-indigo-600 text-white py-1 px-4 rounded-full text-sm hover:bg-indigo-700"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div
+            class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300"
+          >
+            <img
+              src="https://via.placeholder.com/300x400"
+              alt="Ikat Wall Hanging"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-gray-800 mb-2">
+                Framed Ikat Wall Art
+              </h3>
+              <p class="text-gray-600 text-sm mb-3">
+                Framed handwoven Ikat textile as decorative wall hanging
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-indigo-700">₹6,200</span>
+                <button
+                  class="bg-indigo-600 text-white py-1 px-4 rounded-full text-sm hover:bg-indigo-700"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-8">
+          <a
+            href="#"
+            class="inline-block bg-indigo-600 text-white py-2 px-6 rounded-full hover:bg-indigo-700 transition"
+          >
+            View All Products
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Showcase -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold mb-8 text-gray-800">The Craft Process</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Step 1 -->
+          <div class="flex flex-col items-center text-center">
+            <div
+              class="w-20 h-20 flex items-center justify-center rounded-full bg-indigo-100 text-indigo-600 text-2xl font-bold mb-4"
+            >
+              1
+            </div>
+            <h3 class="text-lg font-bold mb-2">Design Preparation</h3>
+            <p class="text-gray-600">
+              Creating the pattern on graph paper before transferring it to the
+              yarn. This determines the final design.
+            </p>
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Design Preparation"
+              class="mt-4 rounded-lg shadow-md"
+            />
+          </div>
+
+          <!-- Step 2 -->
+          <div class="flex flex-col items-center text-center">
+            <div
+              class="w-20 h-20 flex items-center justify-center rounded-full bg-indigo-100 text-indigo-600 text-2xl font-bold mb-4"
+            >
+              2
+            </div>
+            <h3 class="text-lg font-bold mb-2">Tie-Dye Process</h3>
+            <p class="text-gray-600">
+              Bundling and tying sections of yarn with waterproof material
+              before dyeing to create the pattern.
+            </p>
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Tie-Dye Process"
+              class="mt-4 rounded-lg shadow-md"
+            />
+          </div>
+
+          <!-- Step 3 -->
+          <div class="flex flex-col items-center text-center">
+            <div
+              class="w-20 h-20 flex items-center justify-center rounded-full bg-indigo-100 text-indigo-600 text-2xl font-bold mb-4"
+            >
+              3
+            </div>
+            <h3 class="text-lg font-bold mb-2">Weaving</h3>
+            <p class="text-gray-600">
+              Carefully aligning the dyed yarns on the loom and weaving them
+              together to reveal the final pattern.
+            </p>
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Weaving Process"
+              class="mt-4 rounded-lg shadow-md"
+            />
+          </div>
+        </div>
+
+        <div class="text-center mt-10">
+          <a
+            href="#"
+            class="inline-block border border-indigo-600 text-indigo-600 py-2 px-6 rounded-full hover:bg-indigo-600 hover:text-white transition"
+          >
+            Learn More About The Process
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-indigo-900 text-white py-12">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-2xl font-bold mb-4">Support Traditional Crafts</h2>
+        <p class="max-w-2xl mx-auto mb-8">
+          By purchasing from Lakshmi Devi, you are helping preserve a
+          centuries-old tradition and supporting the livelihood of artisan
+          communities.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a
+            href="#"
+            class="bg-white text-indigo-900 py-2 px-6 rounded-full font-medium hover:bg-gray-100 transition"
+          >
+            Shop Products
+          </a>
+          <a
+            href="#"
+            class="border border-white py-2 px-6 rounded-full font-medium hover:bg-white hover:text-indigo-900 transition"
+          >
+            Commission Custom Work
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <div class="flex items-center mb-4">
+              <img
+                src="https://via.placeholder.com/50"
+                alt="Artwork Logo"
+                class="h-10 w-10 rounded-full"
+              />
+              <h2 class="ml-2 text-xl font-bold">Artwork</h2>
+            </div>
+            <p class="text-gray-400">
+              Preserving {"India's"} artistic heritage through digital
+              documentation and market access.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Home</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Explore Crafts</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Artisan Stories</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Cultural Map</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold mb-4">For Artisans</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Join as Artisan</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Resources</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Training Videos</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Support</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li>Email: info@artwork.org</li>
+              <li>Phone: +91 9876543210</li>
+              <li>Address: New Delhi, India</li>
+            </ul>
+            <div class="mt-4 flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400"
+        >
+          <p>
+            &copy; 2025 Artwork. All rights reserved. | Developed for RIT
+            Hackathon
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Basic JavaScript for interactivity -->
+    <script>
+      // Simple tab switching functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabLinks = document.querySelectorAll(
+          "ul.flex.flex-wrap.-mb-px a"
+        );
+
+        tabLinks.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            // Remove active classes from all tabs
+            tabLinks.forEach((tab) => {
+              tab.classList.remove(
+                "border-indigo-600",
+                "text-indigo-600",
+                "active"
+              );
+              tab.classList.add(
+                "border-transparent",
+                "hover:text-gray-600",
+                "hover:border-gray-300"
+              );
+            });
+
+            // Add active class to clicked tab
+            this.classList.add(
+              "border-indigo-600",
+              "text-indigo-600",
+              "active"
+            );
+            this.classList.remove(
+              "border-transparent",
+              "hover:text-gray-600",
+              "hover:border-gray-300"
+            );
+
+            // In a real application, you would also switch content here
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
