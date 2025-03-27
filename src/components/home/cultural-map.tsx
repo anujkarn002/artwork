@@ -1,6 +1,19 @@
-import Link from "next/link";
+"use client";
 
+import L from "leaflet";
+import Link from "next/link";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+
+// Fix Leaflet marker icon issue
+delete (L.Icon.Default.prototype as any)._getIconUrl;
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: "/leaflet/images/marker-icon-2x.png",
+  iconUrl: "/leaflet/images/marker-icon.png",
+  shadowUrl: "/leaflet/images/marker-shadow.png",
+});
 export default function CulturalMap() {
+  const position = [22.9734, 78.6569]; // Center of India
+
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
@@ -111,11 +124,20 @@ export default function CulturalMap() {
           </div>
 
           <div className="relative">
-            <div className="aspect-w-16 aspect-h-9 h-[300px] md:h-[400px] bg-gray-300 rounded-lg relative">
-              {/* Map would be rendered here */}
-              <div className="absolute inset-0 flex items-center justify-center text-gray-500">
-                Interactive Map of {"India's"} Craft Regions
-              </div>
+            <div className="aspect-w-16 aspect-h-9 h-[300px] md:h-[400px] rounded-lg overflow-hidden shadow-md">
+              <MapContainer
+                center={position}
+                zoom={5}
+                style={{ height: "100%", width: "100%" }}
+              >
+                <TileLayer
+                  attribution='&copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                />
+                <Marker position={position}>
+                  <Popup>{"India's"} Cultural Craft Center</Popup>
+                </Marker>
+              </MapContainer>
             </div>
           </div>
         </div>
