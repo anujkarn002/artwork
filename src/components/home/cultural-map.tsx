@@ -1,19 +1,19 @@
 "use client";
 
-import L from "leaflet";
 import Link from "next/link";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import dynamic from "next/dynamic";
 
-// Fix Leaflet marker icon issue
-delete (L.Icon.Default.prototype as any)._getIconUrl;
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: "/leaflet/images/marker-icon-2x.png",
-  iconUrl: "/leaflet/images/marker-icon.png",
-  shadowUrl: "/leaflet/images/marker-shadow.png",
+// Dynamically import the Map component with SSR disabled
+const Map = dynamic(() => import("./map"), {
+  ssr: false,
+  loading: () => (
+    <div className="w-full h-full flex items-center justify-center bg-gray-200">
+      Loading map...
+    </div>
+  ),
 });
-export default function CulturalMap() {
-  const position = [22.9734, 78.6569]; // Center of India
 
+export default function CulturalMap() {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
@@ -125,19 +125,7 @@ export default function CulturalMap() {
 
           <div className="relative">
             <div className="aspect-w-16 aspect-h-9 h-[300px] md:h-[400px] rounded-lg overflow-hidden shadow-md">
-              <MapContainer
-                center={position}
-                zoom={5}
-                style={{ height: "100%", width: "100%" }}
-              >
-                <TileLayer
-                  attribution='&copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
-                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                />
-                <Marker position={position}>
-                  <Popup>{"India's"} Cultural Craft Center</Popup>
-                </Marker>
-              </MapContainer>
+              <Map />
             </div>
           </div>
         </div>
