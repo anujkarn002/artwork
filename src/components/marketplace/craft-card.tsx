@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 type CraftCardProps = {
@@ -14,9 +15,16 @@ type CraftCardProps = {
 export default function CraftCard({ craft }: CraftCardProps) {
   return (
     <div className="craft-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
-      <div className="h-48 bg-gray-200 relative">
-        {/* Replace with actual image when available */}
-      </div>
+      <Image
+        src={craft.imageUrl}
+        alt={craft.name}
+        width={500}
+        height={300}
+        className="w-full h-48 object-cover"
+        priority
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      />
+      {/* Craft Information */}
       <div className="p-6">
         <div className="flex justify-between items-center mb-3">
           <h3 className="text-xl font-bold text-gray-800">{craft.name}</h3>

@@ -13,7 +13,7 @@ export default async function CraftsPage() {
         "Traditional folk art from Bihar with rich cultural symbolism and vibrant colors.",
       region: "Bihar, India",
       isGiTagged: true,
-      imageUrl: "/placeholder.jpg",
+      imageUrl: "/images/IMG-20250327-WA0061.jpg",
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ export default async function CraftsPage() {
         "Exquisite handwoven shawls from Kashmir made from fine wool of Changthangi goats.",
       region: "Kashmir, India",
       isGiTagged: true,
-      imageUrl: "/placeholder.jpg",
+      imageUrl: "/images/IMG-20250327-WA0060.jpg",
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ export default async function CraftsPage() {
         "Metal handicraft from Bidar with silver inlay work on blackened alloy of zinc and copper.",
       region: "Karnataka, India",
       isGiTagged: true,
-      imageUrl: "/placeholder.jpg",
+      imageUrl: "/images/IMG-20250327-WA0062.jpg",
     },
     {
       id: 4,
@@ -40,7 +40,7 @@ export default async function CraftsPage() {
         "A unique tie-dye technique from Telangana that creates geometric patterns with intricate precision.",
       region: "Telangana, India",
       isGiTagged: true,
-      imageUrl: "/placeholder.jpg",
+      imageUrl: "/images/IMG-20250327-WA0063.jpg",
     },
     {
       id: 5,
@@ -49,7 +49,7 @@ export default async function CraftsPage() {
         "Luxurious silk sarees with ornate zari work from the holy city of Varanasi.",
       region: "Uttar Pradesh, India",
       isGiTagged: true,
-      imageUrl: "/placeholder.jpg",
+      imageUrl: "/images/IMG-20250327-WA0059.jpg",
     },
     {
       id: 6,
@@ -58,7 +58,7 @@ export default async function CraftsPage() {
         "Tribal art form featuring distinctive geometric patterns and depictions of daily life.",
       region: "Maharashtra, India",
       isGiTagged: false,
-      imageUrl: "/placeholder.jpg",
+      imageUrl: "/images/IMG-20250327-WA0061.jpg",
     },
   ];
 

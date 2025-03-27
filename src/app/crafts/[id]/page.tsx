@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -8,8 +9,6 @@ type Props = {
 };
 
 export default async function CraftDetailPage(props: Props) {
-  // In a real app, this would fetch from Supabase based on params.craftId
-  // Using mock data for this example
   const params = await props.params;
   const craftId = parseInt(params.craftId);
 
@@ -42,7 +41,7 @@ export default async function CraftDetailPage(props: Props) {
       { id: 1, name: "Lakshmi Devi", experience: "40+ years" },
       { id: 2, name: "Ramesh Kumar", experience: "25+ years" },
     ],
-    imageUrl: "/placeholder.jpg",
+    imageUrl: "/images/IMG-20250327-WA0063.jpg",
   };
 
   if (!craft) {
@@ -57,9 +56,15 @@ export default async function CraftDetailPage(props: Props) {
           <div className="flex flex-col md:flex-row items-center gap-8">
             {/* Craft Image */}
             <div className="w-full md:w-2/5">
-              <div className="aspect-w-4 aspect-h-3 bg-gray-300 rounded-lg h-[300px]">
-                {/* Replace with actual image */}
-              </div>
+              <Image
+                src={craft.imageUrl}
+                alt={craft.name}
+                width={600}
+                height={400}
+                className="rounded-lg shadow-lg"
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
             </div>
 
             {/* Craft Information */}

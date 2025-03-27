@@ -2,7 +2,6 @@ import Link from "next/link";
 import CraftCard from "@/components/marketplace/craft-card";
 
 export default async function FeaturedCrafts() {
-  // In a real app, this would fetch from Supabase
   const featuredCrafts = [
     {
       id: 1,
@@ -11,7 +10,7 @@ export default async function FeaturedCrafts() {
         "Traditional folk art from Bihar with rich cultural symbolism and vibrant colors.",
       region: "Bihar, India",
       isGiTagged: true,
-      imageUrl: "/placeholder.jpg",
+      imageUrl: "/images/IMG-20250327-WA0061.jpg",
     },
     {
       id: 2,
@@ -20,7 +19,7 @@ export default async function FeaturedCrafts() {
         "Exquisite handwoven shawls from Kashmir made from fine wool of Changthangi goats.",
       region: "Kashmir, India",
       isGiTagged: true,
-      imageUrl: "/placeholder.jpg",
+      imageUrl: "/images/IMG-20250327-WA0060.jpg",
     },
     {
       id: 3,
@@ -29,7 +28,7 @@ export default async function FeaturedCrafts() {
         "Metal handicraft from Bidar with silver inlay work on blackened alloy of zinc and copper.",
       region: "Karnataka, India",
       isGiTagged: true,
-      imageUrl: "/placeholder.jpg",
+      imageUrl: "/images/IMG-20250327-WA0063.jpg",
     },
   ];
 

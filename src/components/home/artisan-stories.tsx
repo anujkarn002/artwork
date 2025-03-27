@@ -9,7 +9,7 @@ export default function ArtisanStories() {
       title: "Master Weaver, Pochampally",
       story:
         "I learned this craft from my mother when I was 12. Today, after 40 years, I have trained over 50 women in my village to preserve our tradition.",
-      imageUrl: "/placeholder.jpg",
+      imageUrl: "/images/IMG-20250327-WA0059.jpg",
     },
     {
       id: 2,
@@ -17,7 +17,7 @@ export default function ArtisanStories() {
       title: "Pottery Artist, Blue Pottery of Jaipur",
       story:
         "Each piece tells a story of our cultural heritage. The techniques we use have remained unchanged for centuries.",
-      imageUrl: "/placeholder.jpg",
+      imageUrl: "/images/IMG-20250327-WA0063.jpg",
     },
   ];
 

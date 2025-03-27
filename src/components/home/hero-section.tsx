@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function HeroSection() {
@@ -30,9 +31,14 @@ export default function HeroSection() {
           </div>
           <div className="relative">
             <div className="aspect-w-16 aspect-h-9 relative h-[300px] md:h-[400px]">
-              <div className="absolute inset-0 bg-gray-300 rounded-lg">
-                {/* Replace with actual image when available */}
-              </div>
+              <Image
+                src="/images/IMG-20250327-WA0062.jpg"
+                alt="Artisan Craft"
+                fill
+                className="object-cover rounded-lg shadow-lg"
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
             </div>
             {/* Floating badge */}
             <div className="absolute -bottom-5 -left-5 bg-amber-500 text-white px-4 py-2 rounded-lg shadow-lg">
