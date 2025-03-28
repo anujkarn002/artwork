@@ -1,5 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export default function HeroSection() {
   return (
@@ -8,25 +9,29 @@ export default function HeroSection() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
             <h1 className="text-3xl md:text-5xl font-bold mb-4">
-              Preserving {"India's"} Artistic Heritage
+              Preserving India's Artistic Heritage
             </h1>
             <p className="text-lg md:text-xl mb-8">
-              Connecting traditional artisans with the global market while
+              Artwork connects traditional artisans with the global market while
               documenting and preserving cultural treasures.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link
-                href="/crafts"
-                className="bg-white text-indigo-900 py-2 px-6 rounded-full font-medium hover:bg-gray-100 transition"
+              <Button
+                asChild
+                size="lg"
+                variant="default"
+                className="bg-white text-indigo-900 hover:bg-gray-100"
               >
-                Explore Crafts
-              </Link>
-              <Link
-                href="/artisans"
-                className="border border-white py-2 px-6 rounded-full font-medium hover:bg-white hover:text-indigo-900 transition"
+                <Link href="/crafts">Explore Crafts</Link>
+              </Button>
+              <Button
+                asChild
+                size="lg"
+                variant='outline'
+                className=" bg-transparent hover:bg-white hover:text-indigo-900"
               >
-                Meet Artisans
-              </Link>
+                <Link href="/artisans">Meet Artisans</Link>
+              </Button>
             </div>
           </div>
           <div className="relative">
@@ -54,7 +59,7 @@ export default function HeroSection() {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 100"
-          fill="#ffffff"
+          fill="#efe5ff"
         >
           <path d="M0,64L80,58.7C160,53,320,43,480,48C640,53,800,75,960,80C1120,85,1280,75,1360,69.3L1440,64L1440,100L1360,100C1280,100,1120,100,960,100C800,100,640,100,480,100C320,100,160,100,80,100L0,100Z"></path>
         </svg>

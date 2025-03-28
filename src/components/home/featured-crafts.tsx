@@ -1,57 +1,52 @@
 import Link from "next/link";
-import CraftCard from "@/components/marketplace/craft-card";
+import { Button } from "@/components/ui/button";
+import CraftCard from "@/components/shared/craft-card";
 
-export default async function FeaturedCrafts() {
-  const featuredCrafts = [
-    {
-      id: 1,
-      name: "Madhubani Painting",
-      description:
-        "Traditional folk art from Bihar with rich cultural symbolism and vibrant colors.",
-      region: "Bihar, India",
-      isGiTagged: true,
-      imageUrl: "/images/IMG-20250327-WA0061.jpg",
-    },
-    {
-      id: 2,
-      name: "Pashmina Shawls",
-      description:
-        "Exquisite handwoven shawls from Kashmir made from fine wool of Changthangi goats.",
-      region: "Kashmir, India",
-      isGiTagged: true,
-      imageUrl: "/images/IMG-20250327-WA0060.jpg",
-    },
-    {
-      id: 3,
-      name: "Bidriware",
-      description:
-        "Metal handicraft from Bidar with silver inlay work on blackened alloy of zinc and copper.",
-      region: "Karnataka, India",
-      isGiTagged: true,
-      imageUrl: "/images/IMG-20250327-WA0063.jpg",
-    },
-  ];
+interface FeaturedCraftsProps {
+  crafts: Array<{
+    id: string;
+    name: string;
+    description: string;
+    is_gi_tagged: boolean;
+    image_url: string;
+    regions: {
+      id: string;
+      name: string;
+      state: string;
+    } | null;
+  }>;
+}
 
+export default function FeaturedCrafts({ crafts }: FeaturedCraftsProps) {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 ">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
-          Featured Crafts
-        </h2>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold mb-3">
+            Explore Traditional Crafts
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Discover the rich diversity of traditional crafts from across India,
+            each with its unique cultural significance and artistic heritage.
+          </p>
+        </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {featuredCrafts.map((craft) => (
-            <CraftCard key={craft.id} craft={craft} />
-          ))}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {crafts.length > 0
+            ? crafts.map((craft) => <CraftCard key={craft.id} craft={craft} />)
+            : // Placeholder cards if no crafts are available
+              Array.from({ length: 4 }).map((_, index) => (
+                <div
+                  key={index}
+                  className="bg-gray-100 rounded-lg h-64 animate-pulse"
+                />
+              ))}
         </div>
 
         <div className="text-center mt-12">
-          <Link
-            href="/crafts"
-            className="inline-block bg-indigo-600 text-white py-3 px-8 rounded-full hover:bg-indigo-700 transition"
-          >
-            View All Crafts
-          </Link>
+          <Button asChild>
+            <Link href="/crafts">View All Crafts</Link>
+          </Button>
         </div>
       </div>
     </section>
